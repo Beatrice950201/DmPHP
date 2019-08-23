@@ -12,7 +12,8 @@
 return [
     // 应用调度开始
     'app_dispatch' => [
-        "app\\common\\begin\\Dispatch"
+        "app\\common\\begin\\Dispatch",
+        "app\\common\\begin\\HookBegin",
     ],
     // 日志写入
     'log_write'    => [],
