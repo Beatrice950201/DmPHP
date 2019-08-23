@@ -12,4 +12,5 @@
 return[
     ["rule"=>'/index/:controller/:action/:params','module' => 'index',"controller"=>1,"action"=>2,'params' =>3],
     ["rule"=>'/admin/:controller/:action/:params','module' => 'admin',"controller"=>1,"action"=>2,'params' =>3],
+    ["rule"=>"/admin.html",'module' => 'admin',"controller"=>"index","action"=>"index"]
 ];
