@@ -9,5 +9,5 @@
  */
 
 return[
-    "admin" =>["rule"=>"/admin.html","controller"=>"index","action"=>"index"]
+
 ];
