@@ -34,7 +34,8 @@ final class Phalcon{
         /***************************************************常量配置END**************************************/
         /***************************************************自动注册类**************************************/
         spl_autoload_register(function ($class){
-            $dir_name = dirname($class);$base_name = basename($class);
+            $dir_name = dirname(str_replace("\\",'/',$class));
+            $base_name = basename(str_replace("\\",'/',$class));
             if(isset(self::$core_namespaces[$dir_name])){
                 include self::$core_namespaces[$dir_name].DS.$base_name.EXT;
             }
@@ -44,6 +45,5 @@ final class Phalcon{
         library\Run::run();
         /***************************************************加载执行文件END**************************************/
     }
-
 }
 Phalcon::run();
